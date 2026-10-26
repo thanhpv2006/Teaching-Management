@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-26",
+  "java_tests": [
+    {
+      "name": "vn.btl.teaching.BusinessServiceTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "vn.btl.teaching.CatalogServiceTest",
+      "tests": "5",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "vn.btl.teaching.LiveDatabaseTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "1"
+    },
+    {
+      "name": "vn.btl.teaching.ProcedureGatewayTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "vn.btl.teaching.WebFlowTest",
+      "tests": "22",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ],
+  "java_test_passed": 38,
+  "live_database_tests_skipped": 1,
+  "jar_http_login_csrf": "PASS",
+  "mysql_engine_version": "8.4.11",
+  "mysql_dump_and_4_routines_engine_only": "PASS",
+  "mysql_method": "isolated initialize init-file; no JDBC/TCP connection",
+  "mysql_sql_assertions": 7,
+  "mysql_expected_errors": 6,
+  "source_dump_sha256": "65330f73d454a592975c675158e0d7da944f1de767111f410ff49aa9c5adc922",
+  "visual_checks": [
+    "password toggle PASS",
+    "login desktop PASS",
+    "home desktop PASS",
+    "tuition desktop PASS",
+    "grades desktop PASS",
+    "mobile layout/menu PASS"
+  ],
+  "live_java_mysql_end_to_end": "CHUA_NGHIEM_THU",
+  "users_machine_acceptance": "CHUA_CHAY"
+}

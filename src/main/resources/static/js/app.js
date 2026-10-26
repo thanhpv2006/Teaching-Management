@@ -1,0 +1,9 @@
+document.querySelectorAll('[data-password]').forEach(b=>b.addEventListener('click',()=>{const i=document.getElementById(b.dataset.password);const hidden=i.type==='password';i.type=hidden?'text':'password';b.textContent=hidden?'Ẩn':'Hiện';b.setAttribute('aria-label',hidden?'Ẩn mật khẩu':'Hiện mật khẩu');}));
+document.querySelectorAll('form[method="post"]').forEach(f=>f.addEventListener('submit',e=>{if(f.dataset.confirm&&!window.confirm(f.dataset.confirm)){e.preventDefault();return;}f.querySelectorAll('button[type="submit"]').forEach(b=>{b.disabled=true;b.setAttribute('aria-busy','true');});}));
+document.querySelectorAll('[data-collect]').forEach(b=>b.addEventListener('click',()=>{const student=document.getElementById('collect-student'),amount=document.getElementById('collect-amount');student.value=b.dataset.student;amount.value=b.dataset.debt;document.getElementById('collect').scrollIntoView({behavior:'smooth',block:'start'});amount.focus({preventScroll:true});}));
+const menu=document.querySelector('.menu-toggle');if(menu)menu.addEventListener('click',()=>{const expanded=document.body.classList.toggle('nav-open');menu.setAttribute('aria-expanded',String(expanded));});
+let links=[...document.querySelectorAll('[data-nav]')];const matching=links.filter(a=>a.dataset.nav==='/'?location.pathname==='/':location.pathname.startsWith(a.dataset.nav)).sort((a,b)=>b.dataset.nav.length-a.dataset.nav.length);if(matching[0]){matching[0].classList.add('active');matching[0].setAttribute('aria-current','page');}
+
+function closeNavigation(){document.body.classList.remove('nav-open');if(menu)menu.setAttribute('aria-expanded','false');}
+document.querySelector('.nav-close')?.addEventListener('click',closeNavigation);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeNavigation();});

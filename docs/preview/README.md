@@ -1,0 +1,1 @@
+Ảnh xem trước được tạo từ HTML Thymeleaf render trong test Spring với dữ liệu JDBC giả lập. Dùng để kiểm tra bố cục desktop/mobile; không phải ảnh nghiệm thu kết nối MySQL thật. Khi viết báo cáo, chụp ứng dụng đang chạy trên máy bạn để thay ảnh minh họa.
